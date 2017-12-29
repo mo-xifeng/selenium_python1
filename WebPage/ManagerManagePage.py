@@ -84,7 +84,7 @@ class AddManagerPage(BasePage):
     
     
     
-    
+    #初始化
     def __init__(self):
         self.driver=BasePage.__init__(self,'ff')
         
