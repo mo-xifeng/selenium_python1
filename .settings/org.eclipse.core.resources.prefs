@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebPage/BasePage.py=utf-8
+encoding//WebPage/LoginPage.py=utf-8
+encoding//WebPage/ManagerManagePage.py=utf-8
+encoding//common/LoginAction.py=utf-8
+encoding//common/OperationFile.py=UTF-8
+encoding//common/ScreenShots.py=utf-8
+encoding//test_case/run_test.py=utf-8
+encoding//test_case/test_login.py=utf-8
+encoding//test_case/test_manager_manage.py=utf-8

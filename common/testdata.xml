@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wisetrader>
+    <manager>
+		<login url="https://trade.iwisetrader.com/Login/Manager/ManagerLogin">
+		    <useraccount elemtype="id" elemvalue="form-username">
+		        <ac>6660021111</ac>
+		        <ac>666011</ac>
+				<ac>6660021111</ac>
+			</useraccount>
+			<password elemtype="id" elemvalue="form-password">
+			    <pw>abc123</pw>
+		        <pw>abc123</pw>
+				<pw>11111</pw>
+			</password>
+			<login_btn elemtype="class" elemvalue="btn">
+		        <caption></caption>
+			</login_btn>
+			<err_info elemtype="id" elemvalue="MessageValue">
+			<ei>该账号不存在！</ei>
+			<ei>密码错误,错误3次账号将被冻结！</ei>
+
+			</err_info>
+		</login>
+		<manager_manage attach_url="Manager/Manager/Managers" >
+            <manage_search_func id="1-2-1">
+			    <s_manager_account elemtype="id" elemvalue="ManagerNo">
+		            <sa>6660021111</sa>
+				    <sa>6611</sa>
+			    </s_manager_account>
+			    <s_manager_email elemtype="id" elemvalue="ManagerEmail">
+		            <se>@</se>
+				    <se>ch</se>
+			    </s_manager_email>
+			    <search_btn elemtype="xpath" elemvalue="//input[@value=u'查询']"></search_btn>
+				<table elemtype="id" elemvalue="table">
+				   <tab_rows elemtype="tag_name" elemvalue="tr"></tab_rows>
+				   <tab_cols elemtype="tag_name" elemvalue="td"></tab_cols>
+				</table>
+				<add_btn elemtype="xpath" elemvalue="/html/body/h3/span/button"></add_btn>
+			</manage_search_func>
+			<manage_add_func>
+			    <add_manager_account1 elemtype="id" elemvalue="Account1">
+			    	 <add1>666</add1>
+			    </add_manager_account1>
+			    <add_manager_account3 elemtype="id" elemvalue="Account3">
+			    	 <add3>1111</add3>
+			    </add_manager_account3>
+			    <acc_dup_err elemtype="id" elemvalue="error_ManagersNo">
+			         <ei>账号已存在</ei>
+			    </acc_dup_err>
+			    <add_manager_password elemtype="id" elemvalue="Password">
+			    	 <addpw>abc123</addpw>
+			    </add_manager_password>
+			    <add_alert_lot elemtype="id" elemvalue="WarningLots">
+			    	 <addlot>50</addlot>
+			    </add_alert_lot>
+			    <add_manager_name elemtype="id" elemvalue="ManagersName">
+			    	 <addn>01</addn>
+			    </add_manager_name>
+			    <select_manager_role elemtype="id" elemvalue="M_selectRole">
+			    	 <addr>3</addr>			    
+			    </select_manager_role>
+			    <langue elemtype="id" elemvalue="Language">
+			         <simp>2</simp>
+			    </langue>
+			    <m_email elemtype="id" elemvalue="Email">
+			        <mm>chxu1989@126.com</mm>
+			    </m_email>
+			    <confirm_btn elemtype="id" elemvalue="btnManager"></confirm_btn>
+			    <suc_info elemtype="id" elemvalue="MessageValue"></suc_info>
+			</manage_add_func>		    
+		</manager_manage>
+		<customer_manage attach_url="Manager/Customer/CustomerManage">
+		    <customer_search_func id="1-4-1">
+			    <s_customer_account elemtype="name" elemvalue="ClientNo">
+		            <sa>6611</sa>
+				    <sa>6611</sa>
+			    </s_customer_account>
+			    <s_customer_name elemtype="name" elemvalue="Name">
+		            <se>@</se>
+				    <se>ch</se>
+			    </s_customer_name>
+			    //*[@id="CustomerManager"]/div/table/tbody/tr[3]/td[6]/input
+			    <search_btn elemtype="xpath" elemvalue="//input[@value=u'查询']"></search_btn>
+				<table elemtype="id" elemvalue="table">
+				   <tab_rows elemtype="tag_name" elemvalue="tr"></tab_rows>
+				   <tab_cols elemtype="tag_name" elemvalue="td"></tab_cols>
+				</table>
+			</customer_search_func>
+			<customer_add_func>
+			    <customer_AcNo_front elemtype="xpath" elemvalue="//table[1]//input[1]">
+			    <af>666</af>
+			    <af>666</af>
+			    <af>666</af>
+			    <af>666</af>
+			    </customer_AcNo_front>
+			    <customer_AcNo_back elemtype="xpath" elemvalue="//table[1]//input[2]">
+			        <ab>1111</ab>
+			        <ab>1112</ab>
+			        <ab>1113</ab>
+			        <ab>1114</ab>
+			    </customer_AcNo_back>
+			    <customer_select_TradeCurrency elemtype="name" elemvalue="TradeCurrency]">
+                    <tc>1</tc>
+			    </customer_select_TradeCurrency>
+			    <add_username elemtype="name" elemvalue="Name">
+			        <au>"u'test_用户1_cx'"</au>
+			        <au>"u'test_用户2_cx'"</au>
+			        <au>"u'test_用户3_cx'"</au>
+			        <au>"u'test_用户4_cx'"</au>
+                </add_username>
+			    <add_password elemtype="name" elemvalue="MasterPassword">
+			        <ap>abc123</ap>
+			        <ap>abc123</ap>
+			        <ap>abc123</ap>
+			        <ap>abc123</ap>
+			    </add_password>
+			    <select_sales elemtype="name" elemvalue="Sales">
+			        <ss>1</ss>
+			    </select_sales>
+			    <select_GroupsNo elemtype="name" elemvalue="GroupsNo">
+			        <sg>1</sg>
+			    </select_GroupsNo>
+			    <add_btn elemtype="id" elemvalue="insert">
+			    </add_btn>
+			    
+			</customer_add_func>
+			<add_func id="1-2-1">
+			    <add_btn elemtype="xpath" elemvalue="/html/body/h3/span/button"></add_btn>
+			</add_func>			
+		</customer_manage>
+		<sales_manage attach_url="Manager/Sales/ManagerSales">
+			 <sales_search_func>
+			     <s_sales_account elemtype="id" elemvalue="account">
+		            <sa>6661</sa>
+				    <sa>6661</sa>
+			     </s_sales_account>
+			     <s_sales_email elemtype="id" elemvalue="email">
+		            <se>21</se>
+				    <se>@</se>
+			     </s_sales_email>
+			     <search_btn elemtype="xpath" elemvalue="//input[@value=u'查询']"></search_btn>
+				 <table elemtype="id" elemvalue="table">
+				   <tab_rows elemtype="tag_name" elemvalue="tr"></tab_rows>
+				   <tab_cols elemtype="tag_name" elemvalue="td"></tab_cols>
+				 </table>
+			 </sales_search_func>
+			 <sales_add_func>
+			     <add_sales_account1 elemtype="id" elemvalue="Account1">
+			    	 <add_account1>666</add_account1>
+			     </add_sales_account1>
+			     <add_sales_account3 elemtype="id" elemvalue="Account3">
+			    	 <add_account3>110</add_account3>
+			     </add_sales_account3>
+			     <err_info elemtype="id" elemvalue="error_ManagersNo">
+			         <ei>账号已存在</ei>
+			     </err_info>
+			     <add_sales_password elemtype="id" elemvalue="Password">
+			    	 <add_pw>abc123</add_pw>
+			     </add_sales_password>
+			     <add_sales_name elemtype="name" elemvalue="Name">
+			    	 <add_name>01</add_name>
+			     </add_sales_name>
+			     <add_btn elemtype="xpath" elemvalue="//input[@value=u'提交']"></add_btn>
+			 </sales_add_func>
+		</sales_manage>
+    </manager>
+</wisetrader>	
